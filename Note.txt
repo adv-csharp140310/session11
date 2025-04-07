@@ -1,0 +1,29 @@
+Architecture 
+	Monolithique  		
+		N-Layer - (3)
+
+			Solution
+				Data Access Layer - DAL		: DLL
+				Business Logic Layer - BLL	: DLL
+				Presentation - UI
+					UI.Win					: exe
+					UI.Web					: (dll, exe) IIS
+					UI.Api					: (dll, exe) IIS
+
+	Modular
+		N-Tier
+		Service Oriented Architecture - SOA
+		Microservices
+
+
+
+	Model (DLL)
+		Domain Model - POCO - Enity
+			Class c# map be table database
+		ViewModel
+			BLL -> UI
+				ProductViewModel = ProductVM
+			UI -> BLL
+				ProductCreateInput, ProductRequest
+				ProductUpdateInput
+		Data Transfer Object - DTO
